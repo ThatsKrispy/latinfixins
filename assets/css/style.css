@@ -96,13 +96,15 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 .review-card p { font-size:0.88rem; color:#444; font-style:italic; line-height:1.75; margin-bottom:14px; }
 .review-card cite { font-family:var(--font-display); font-size:0.82rem; font-weight:700; color:var(--orange); font-style:normal; letter-spacing:0.06em; text-transform:uppercase; }
 
-/* ── SERVICES MOSAIC ─────────────────────────────────────────── */
-.services-mosaic { display:grid; grid-template-columns:1fr 1fr; }
-.mosaic-tile { position:relative; overflow:hidden; height:420px; }
+/* ── SERVICES SHOWCASE (single clean section, no duplicate collage) ── */
+.services-mosaic { display:grid; grid-template-columns:1fr 1fr; gap:4px; padding:4px; background:#fff; }
+.mosaic-tile { position:relative; overflow:hidden; height:440px; border-radius:4px; }
 .mosaic-tile img { width:100%; height:100%; object-fit:cover; transition:transform 0.4s; }
-.mosaic-tile:hover img { transform:scale(1.03); }
-.mosaic-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.42); display:flex; align-items:flex-end; padding:32px; }
-.mosaic-label { font-family:var(--font-display); font-size:2rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--white); }
+.mosaic-tile:hover img { transform:scale(1.04); }
+.mosaic-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.05) 100%); display:flex; align-items:flex-end; padding:36px; }
+.mosaic-label-wrap { display:flex; flex-direction:column; gap:6px; }
+.mosaic-label { font-family:var(--font-display); font-size:2rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--white); line-height:1; }
+.mosaic-sublabel { font-family:var(--font-body); font-size:0.85rem; color:rgba(255,255,255,0.85); max-width:280px; line-height:1.5; }
 
 /* ── CLIENTS ─────────────────────────────────────────────────── */
 .clients-section { padding:64px 0; background:#fff; text-align:center; }
@@ -111,14 +113,13 @@ button { cursor:pointer; border:none; background:none; font-family:inherit; }
 .clients-row img { max-height:52px; max-width:150px; width:auto; object-fit:contain; filter:grayscale(20%); opacity:0.8; transition:opacity 0.2s, filter 0.2s; }
 .clients-row img:hover { opacity:1; filter:none; }
 
-/* ── COLLAGE 6-PANEL ─────────────────────────────────────────── */
-.collage-section { display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:280px 280px; }
-.collage-img { overflow:hidden; }
-.collage-img img { width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
-.collage-panel-orange { background:var(--orange); display:flex; align-items:center; justify-content:center; padding:32px; text-align:center; }
-.collage-panel-orange h3 { font-family:var(--font-display); font-size:1.6rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); line-height:1.2; }
-.collage-panel-dark { background:var(--dark); display:flex; align-items:center; justify-content:center; padding:32px; text-align:center; }
-.collage-panel-dark h3 { font-family:var(--font-display); font-size:1.6rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); line-height:1.2; }
+/* ── FAMILY OWNED BANNER (single full-width strip, replaces old collage) ── */
+.family-banner { position:relative; overflow:hidden; min-height:240px; display:flex; align-items:center; }
+.family-banner img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+.family-banner-overlay { position:absolute; inset:0; background:linear-gradient(90deg, rgba(20,20,20,0.85) 0%, rgba(20,20,20,0.55) 55%, rgba(232,164,35,0.55) 100%); z-index:1; }
+.family-banner-content { position:relative; z-index:2; padding:48px 40px; max-width:600px; }
+.family-banner-content h3 { font-family:var(--font-display); font-size:clamp(1.6rem,3vw,2.2rem); font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--white); line-height:1.25; margin-bottom:10px; }
+.family-banner-content p { font-size:0.92rem; color:rgba(255,255,255,0.85); line-height:1.6; }
 
 /* ── INSTAGRAM / SOCIAL ──────────────────────────────────────── */
 .social-section { padding:56px 0 40px; background:#fff; }
@@ -276,8 +277,9 @@ textarea.form-input { min-height:120px; resize:vertical; }
   .services-mosaic { grid-template-columns:1fr; }
   .mosaic-tile { height:280px; }
 
-  /* Collage */
-  .collage-section { grid-template-columns:1fr 1fr; grid-template-rows:200px 200px 200px; }
+  /* Family banner */
+  .family-banner { min-height:200px; }
+  .family-banner-content { padding:28px 24px; }
 
   /* IG */
   .ig-grid { grid-template-columns:repeat(2,1fr); }
@@ -314,7 +316,7 @@ textarea.form-input { min-height:120px; resize:vertical; }
 
 @media (max-width:480px) {
   .food-grid { grid-template-columns:1fr; }
-  .collage-section { grid-template-columns:1fr; grid-template-rows:repeat(6,200px); }
+  .family-banner-content { padding:24px 20px; }
   .hero img { height:240px; }
   .about-btns { flex-direction:column; }
   .about-btns .btn-orange, .about-btns .btn-dark { text-align:center; }
