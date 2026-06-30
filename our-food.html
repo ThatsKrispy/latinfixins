@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- SKIP LINK (ADA) -->
+
   <a class="skip-link" href="#content">Skip to main content</a>
 
   <div class="topbar">
@@ -59,160 +59,210 @@
 
   <main id="content">
 
-    <!-- HERO — crispy chicken sandwich closeup from screenshot -->
-    <div class="hero">
-      <img
-        src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0533.jpg"
-        alt="Latin Fixin's crispy chicken sandwich with crinkle-cut fries"
-        fetchpriority="high"
-      />
-    </div>
+    <!-- PAGE HERO: unique to Our Food — crispy chicken sandwich, distinct from other pages -->
+    <section class="page-hero">
+      <div class="page-hero-photo">
+        <img
+          src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0533.jpg"
+          alt="Latin Fixin's crispy chicken sandwich with crinkle-cut fries"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="page-hero-card">
+        <span class="eyebrow">The Menu</span>
+        <h1>Peruvian-American Fusion</h1>
+        <p>Rethink your favorite comfort food — classic American staples fused with bold Peruvian flavor.</p>
+      </div>
+    </section>
 
-    <!-- INTRO -->
-    <section class="food-grid-section">
+    <!-- SIGNATURE BURGERS -->
+    <section class="card-grid-section" aria-labelledby="burgers-heading">
       <div class="container">
-        <div class="food-grid-intro">
-          <h1>The Perfect Peruvian-american fusion</h1>
-          <p>Rethink your traditional American comfort food! Latin Fixin's fusions your old time American staples with everything you love about traditional Peruvian flavors and cooking styles. Featuring unique dishes like the Lomo Saltado burger and the Huancaina Mac &amp; Cheeseburger that will leave you craving for more!</p>
-          <p style="margin-top:12px;">Allow us to provide you with a delicious culinary experience that you will never forget!</p>
+        <div class="section-head">
+          <span class="eyebrow">Fan Favorites</span>
+          <h2 id="burgers-heading">Signature Burgers &amp; Sandwiches</h2>
+          <p>The dishes that made us famous — including our award-winning Huancaina Mac &amp; Cheeseburger.</p>
         </div>
+        <div class="card-grid">
 
-        <!-- 3-col food grid — all 15 dishes -->
-        <div class="food-grid">
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0726-Edit.jpg" alt="Lomo Saltado Burger" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Lomo Saltado Burger</strong>
-              <span>Grilled patty finished in a sauté pan with Asian spices, tomatoes, caramelized onions, Peruvian aji sauce, cilantro &amp; crunchy potatoes.</span>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0726-Edit.jpg" alt="Lomo Saltado Burger" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Lomo Saltado Burger</h3>
+              <p>Grilled patty finished in a sauté pan with Asian spices, tomatoes, and caramelized onions. Topped with Peruvian aji sauce, fresh cilantro &amp; crunchy potatoes.</p>
             </div>
           </div>
 
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0720-Edit-2.jpg" alt="Pollo Saltado Sandwich" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Pollo Saltado Sandwich</strong>
-              <span>Chicken sautéed with Asian spices, tomatoes &amp; caramelized onions. Topped with Peruvian aji sauce, fresh cilantro &amp; crunchy potatoes.</span>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0585-Edit.jpg" alt="Huancaina Mac and Cheeseburger" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Huancaina Mac &amp; Cheeseburger</h3>
+              <p>Burger patty topped with fried mac &amp; cheese, Huancaina sauce, and Peruvian aji.</p>
+              <span class="menu-badge">🏆 2019 Food Truck Wars — Perfect Score</span>
             </div>
           </div>
 
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0585-Edit.jpg" alt="Huancaina Mac &amp; Cheeseburger" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Huancaina Mac &amp; Cheeseburger</strong>
-              <span>Winner of the 2019 Food Truck Wars — perfect score ever recorded. Topped with fried mac &amp; cheese, Huancaina sauce &amp; Peruvian Aji.</span>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0720-Edit-2.jpg" alt="Pollo Saltado Sandwich" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Pollo Saltado Sandwich</h3>
+              <p>Chicken sautéed with Asian spices, tomatoes &amp; caramelized onions. Topped with Peruvian aji sauce, cilantro &amp; crunchy potatoes.</p>
             </div>
           </div>
 
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0653-Edit.jpg" alt="BBQ Pulled Pork Sandwich" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>BBQ Pulled Pork Sandwich</strong>
-              <span>Slow roasted Boston butt, hand pulled, drizzled with BBQ sauce and topped with crispy onions.</span>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0653-Edit.jpg" alt="BBQ Pulled Pork Sandwich" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>BBQ Pulled Pork Sandwich</h3>
+              <p>Slow roasted Boston butt, hand pulled, drizzled with BBQ sauce, topped with crispy onions.</p>
             </div>
           </div>
 
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0773.jpg" alt="Brisket Mac &amp; Cheese Sandwich" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Brisket Mac &amp; Cheese Sandwich</strong>
-              <span>Smoked brisket with fried mac &amp; cheese, topped with Huancaina sauce and BBQ sauce.</span>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0773.jpg" alt="Brisket Mac and Cheese Sandwich" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Brisket Mac &amp; Cheese Sandwich</h3>
+              <p>Smoked brisket with fried mac &amp; cheese, topped with Huancaina sauce and BBQ sauce.</p>
             </div>
           </div>
 
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0533.jpg" alt="Crispy Chicken Sandwich" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Crispy Chicken Sandwich</strong>
-              <span>Deep fried chicken with homemade coleslaw and chipotle aioli.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0849.jpg" alt="Pollo Saltado Tacos" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Pollo Saltado Tacos</strong>
-              <span>Two tacos with chicken sautéed with Asian spices, topped with pico de gallo, homemade Peruvian aji sauce &amp; fresh cilantro.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0990.jpg" alt="Crispy Fish Tacos" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Crispy Fish Tacos</strong>
-              <span>Two tacos with deep fried fish, topped with pico de gallo, homemade Peruvian aji sauce &amp; fresh cilantro.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0781.jpg" alt="Chicken Quesadilla with Fries" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Chicken Quesadilla</strong>
-              <span>Chicken quesadilla served with fries.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0523.jpg" alt="Fire Balls" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Fire Balls</strong>
-              <span>Two mac &amp; cheese fireballs topped with Huancaina sauce and sriracha.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0560.jpg" alt="Kids Menu — Chicken Tenders with Fries" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Kids Menu — Chicken Tenders</strong>
-              <span>Chicken tenders with fries.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0622.jpg" alt="Kids Menu — Cheeseburger with Fries" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Kids Menu — Cheeseburger</strong>
-              <span>Cheeseburger with fries.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2024/09/BBQ-Ribs-scaled.jpg" alt="BBQ Ribs — Memphis style" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>BBQ Ribs</strong>
-              <span>Memphis style BBQ ribs served with corn, coleslaw and fries.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2024/09/Smoked-Brisket-scaled.jpg" alt="Smoked Brisket" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Smoked Brisket</strong>
-              <span>Slow smoked brisket served with corn, coleslaw and fries.</span>
-            </div>
-          </div>
-
-          <div class="food-item">
-            <img src="https://latinfixins.com/wp-content/uploads/2024/09/Pulled-Pork-scaled.jpg" alt="Pulled Pork" loading="lazy" />
-            <div class="food-item-caption">
-              <strong>Pulled Pork</strong>
-              <span>Pulled pork with BBQ sauce served with corn, coleslaw and fries.</span>
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0533.jpg" alt="Crispy Chicken Sandwich" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Crispy Chicken Sandwich</h3>
+              <p>Deep fried chicken with homemade coleslaw and chipotle aioli.</p>
             </div>
           </div>
 
         </div>
-        <!-- Order links -->
-        <div style="text-align:center; margin-top:40px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
-          <a href="https://menu.thedoralyard.com/dinein?menu=c9de08fa-9c23-4f47-b211-a63680901d4e" class="btn-orange" target="_blank" rel="noopener">Doral Yard Menu</a>
-          <a href="https://www.ubereats.com/store/latin-fixins-doral/E_B119zsXxKgwZOIDY9r8A" class="btn-dark" target="_blank" rel="noopener">Order on UberEats</a>
-          <a href="https://www.doordash.com/store/latin-fixins-doral-33562370/80941350/" class="btn-dark" target="_blank" rel="noopener">Order on DoorDash</a>
+      </div>
+    </section>
+
+    <!-- TACOS & STARTERS -->
+    <section class="card-grid-section bg-soft" aria-labelledby="tacos-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Starters &amp; Handhelds</span>
+          <h2 id="tacos-heading">Tacos &amp; Sides</h2>
         </div>
+        <div class="card-grid">
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0849.jpg" alt="Pollo Saltado Tacos" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Pollo Saltado Tacos</h3>
+              <p>Two tacos with chicken sautéed in Asian spices, pico de gallo, Peruvian aji sauce &amp; cilantro.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0990.jpg" alt="Crispy Fish Tacos" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Crispy Fish Tacos</h3>
+              <p>Two tacos with deep fried fish, pico de gallo, Peruvian aji sauce &amp; cilantro.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0781.jpg" alt="Chicken Quesadilla with Fries" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Chicken Quesadilla</h3>
+              <p>Served with crinkle-cut fries.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0523.jpg" alt="Fire Balls" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Fire Balls</h3>
+              <p>Two mac &amp; cheese fireballs topped with Huancaina sauce and sriracha — a guest favorite.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BBQ MAINS -->
+    <section class="card-grid-section" aria-labelledby="bbq-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">From the Smoker</span>
+          <h2 id="bbq-heading">BBQ Mains</h2>
+          <p>All served with corn, coleslaw &amp; fries.</p>
+        </div>
+        <div class="card-grid">
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2024/09/BBQ-Ribs-scaled.jpg" alt="BBQ Ribs" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>BBQ Ribs</h3>
+              <p>Memphis style ribs, slow cooked to order.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2024/09/Smoked-Brisket-scaled.jpg" alt="Smoked Brisket" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Smoked Brisket</h3>
+              <p>Slow smoked, tender brisket.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2024/09/Pulled-Pork-scaled.jpg" alt="Pulled Pork" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Pulled Pork</h3>
+              <p>Hand-pulled pork finished with BBQ sauce.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KIDS MENU -->
+    <section class="card-grid-section bg-soft" aria-labelledby="kids-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Family Friendly</span>
+          <h2 id="kids-heading">Kids Menu</h2>
+        </div>
+        <div class="card-grid cols-2">
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0560.jpg" alt="Chicken Tenders with Fries" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Chicken Tenders &amp; Fries</h3>
+              <p>Kid-size portion, served with fries.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0622.jpg" alt="Cheeseburger with Fries" loading="lazy" /></div>
+            <div class="menu-card-body">
+              <h3>Cheeseburger &amp; Fries</h3>
+              <p>Classic kids cheeseburger, served with fries.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band bg-orange" aria-label="Order now">
+      <h2>Ready to Order?</h2>
+      <p>Find us daily at The Doral Yard, or get delivery through UberEats and DoorDash.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="https://www.ubereats.com/store/latin-fixins-doral/E_B119zsXxKgwZOIDY9r8A" class="btn btn-dark" target="_blank" rel="noopener">Order on UberEats</a>
+        <a href="https://www.doordash.com/store/latin-fixins-doral-33562370/80941350/" class="btn btn-outline-white" target="_blank" rel="noopener">Order on DoorDash</a>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-inner">
         <div class="footer-col-left">
@@ -220,8 +270,8 @@
           <div class="footer-social-icons">
             <a href="https://www.facebook.com/latinfixins" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
             <a href="https://www.instagram.com/latinfixins/" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="https://www.yelp.com/biz/latin-fixins-miami-2" target="_blank" rel="noopener" aria-label="Yelp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><circle cx="12" cy="12" r="10"/><text x="12" y="17" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Y</text></svg></a>
-            <a href="https://www.tiktok.com/@latinfixins" target="_blank" rel="noopener" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.19 8.19 0 0 0 4.79 1.52V6.82a4.85 4.85 0 0 1-1.02-.13z"/></svg></a>
+            <a href="https://www.yelp.com/biz/latin-fixins-miami-2" target="_blank" rel="noopener" aria-label="Yelp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-5l4 2.5-4 2.5zm0-7V5l7 4.5-7 4z"/></svg></a>
+            <a href="https://www.tiktok.com/@latinfixins" target="_blank" rel="noopener" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.19 8.19 0 0 0 4.79 1.52V6.82a4.85 4.85 0 0 1-1.02-.13z"/></svg></a>
           </div>
         </div>
         <div class="footer-logo"><img src="https://latinfixins.com/wp-content/uploads/2022/04/LF_WhiteIcon.png" alt="Latin Fixin's icon" width="80" loading="lazy" /></div>
@@ -236,12 +286,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>2025 © Latin Fixin's. All Rights Reserved. &nbsp;·&nbsp; <a href="https://www.thatskrispy.com" target="_blank" rel="noopener">@ThatsKrispy</a></p>
+      <p>2025 © Latin Fixin's. All Rights Reserved. &nbsp;·&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="https://www.thatskrispy.com" target="_blank" rel="noopener">@ThatsKrispy</a></p>
     </div>
   </footer>
 
-
-  <!-- COOKIE CONSENT BANNER -->
   <div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-label="Cookie consent">
     <div class="cookie-banner-inner">
       <p class="cookie-banner-text">We use cookies to improve your experience and analyze site traffic. By clicking "Accept," you consent to our use of cookies. <a href="/privacy">Learn more</a>.</p>

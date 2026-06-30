@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://latinfixins.com/contact-us/" />
   <meta property="og:title" content="Contact Us – Latin Fixins | Book Food Truck & Catering" />
   <meta property="og:description" content="Get a quote for food truck or catering services. Call 786.597.0524 or send a message." />
-  <meta property="og:image" content="https://latinfixins.com/wp-content/uploads/2024/09/LatinFixinsWebBanner.png" />
+  <meta property="og:image" content="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0773.jpg" />
   <link rel="icon" href="https://latinfixins.com/wp-content/uploads/2022/04/LF_Icon_Gradient.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- SKIP LINK (ADA) -->
+
   <a class="skip-link" href="#content">Skip to main content</a>
 
   <div class="topbar">
@@ -59,12 +59,28 @@
 
   <main id="content">
 
-    <section class="contact-page" aria-labelledby="contact-page-heading">
+    <!-- PAGE HERO: unique to Contact — the brisket mac & cheese sandwich, distinct from other pages -->
+    <section class="page-hero">
+      <div class="page-hero-photo compact">
+        <img
+          src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0773.jpg"
+          alt="Latin Fixin's Brisket Mac and Cheese Sandwich"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="page-hero-card">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Let's Make Your Event Unforgettable</h1>
+        <p>Call, text, or send us a message — we'll get back to you fast.</p>
+      </div>
+    </section>
+
+    <section class="contact-page">
       <div class="container">
         <div class="contact-page-inner">
           <div class="contact-page-info">
-            <h1 id="contact-page-heading">Get In Touch!</h1>
-            <p>Please fill out the form and we will contact you back as soon as possible.</p>
+            <h1 style="font-size:1.6rem; margin-bottom:14px;">Reach Us Directly</h1>
+            <p>For the fastest response, call or text. We're active on all the platforms below and respond to messages the same day.</p>
             <div class="contact-detail-list">
               <div class="contact-detail-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
@@ -88,36 +104,36 @@
           <form class="lf-contact-form" novalidate aria-label="Contact form">
             <div class="form-fields">
               <div>
-                <label for="name-c" style="display:none;">Name</label>
+                <label for="name-c" class="sr-only">Your name (required)</label>
                 <input class="form-input" type="text" id="name-c" name="name" placeholder="Name" required autocomplete="name" />
               </div>
               <div class="form-row">
                 <div>
-                  <label for="phone-c" style="display:none;">Phone</label>
+                  <label for="phone-c" class="sr-only">Phone number</label>
                   <input class="form-input" type="tel" id="phone-c" name="phone" placeholder="Phone" autocomplete="tel" />
                 </div>
                 <div>
-                  <label for="email-c" style="display:none;">Email</label>
+                  <label for="email-c" class="sr-only">Email address (required)</label>
                   <input class="form-input" type="email" id="email-c" name="email" placeholder="Email" required autocomplete="email" />
                 </div>
               </div>
               <div>
-                <label for="message-c" style="display:none;">Message</label>
+                <label for="message-c" class="sr-only">Your message (required)</label>
                 <textarea class="form-input" id="message-c" name="message" placeholder="Message" required></textarea>
               </div>
               <button type="submit" class="form-submit-btn">Send</button>
-              <div class="form-msg success" role="alert">✓ Message sent! We'll be in touch shortly.</div>
-              <div class="form-msg error" role="alert"></div>
+              <div class="form-msg success" role="alert" aria-live="polite">✓ Message sent! We'll be in touch shortly.</div>
+              <div class="form-msg error" role="alert" aria-live="polite"></div>
             </div>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- Map -->
     <iframe
+      class="map-embed"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.5!2d-80.3635!3d25.8143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bbf3c0000001%3A0x0!2sThe+Doral+Yard%2C+8455+NW+53rd+St%2C+Doral%2C+FL+33166!5e0!3m2!1sen!2sus!4v1"
-      width="100%" height="300" style="border:0;display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
       title="Latin Fixin's at The Doral Yard, 8455 NW 53rd St, Doral, FL 33166"
       aria-label="Map showing Latin Fixin's at The Doral Yard in Doral, Florida"
     ></iframe>
@@ -132,8 +148,8 @@
           <div class="footer-social-icons">
             <a href="https://www.facebook.com/latinfixins" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
             <a href="https://www.instagram.com/latinfixins/" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="https://www.yelp.com/biz/latin-fixins-miami-2" target="_blank" rel="noopener" aria-label="Yelp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><circle cx="12" cy="12" r="10"/><text x="12" y="17" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Y</text></svg></a>
-            <a href="https://www.tiktok.com/@latinfixins" target="_blank" rel="noopener" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.19 8.19 0 0 0 4.79 1.52V6.82a4.85 4.85 0 0 1-1.02-.13z"/></svg></a>
+            <a href="https://www.yelp.com/biz/latin-fixins-miami-2" target="_blank" rel="noopener" aria-label="Yelp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-5l4 2.5-4 2.5zm0-7V5l7 4.5-7 4z"/></svg></a>
+            <a href="https://www.tiktok.com/@latinfixins" target="_blank" rel="noopener" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.19 8.19 0 0 0 4.79 1.52V6.82a4.85 4.85 0 0 1-1.02-.13z"/></svg></a>
           </div>
         </div>
         <div class="footer-logo"><img src="https://latinfixins.com/wp-content/uploads/2022/04/LF_WhiteIcon.png" alt="Latin Fixin's icon" width="80" loading="lazy" /></div>
@@ -148,15 +164,13 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>2025 © Latin Fixin's. All Rights Reserved. &nbsp;·&nbsp; <a href="https://www.thatskrispy.com" target="_blank" rel="noopener">@ThatsKrispy</a></p>
+      <p>2025 © Latin Fixin's. All Rights Reserved. &nbsp;·&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="https://www.thatskrispy.com" target="_blank" rel="noopener">@ThatsKrispy</a></p>
     </div>
   </footer>
 
-
-  <!-- COOKIE CONSENT BANNER -->
   <div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-label="Cookie consent">
     <div class="cookie-banner-inner">
-      <p class="cookie-banner-text">We use cookies to improve your experience and analyze site traffic. By clicking "Accept," you consent to our use of cookies. <a href="/privacy">Learn more</a>.</p>
+      <p class="cookie-banner-text">We use cookies to improve your experience. <a href="/privacy">Learn more</a>.</p>
       <div class="cookie-banner-actions">
         <button class="cookie-accept" id="cookie-accept">Accept</button>
         <button class="cookie-decline" id="cookie-decline">Decline</button>
