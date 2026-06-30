@@ -1,11 +1,11 @@
 // ============================================================
-// LATIN FIXIN'S — MAIN JS
+// LATIN FIXIN'S — MAIN JS v3
 // ============================================================
 (function () {
   'use strict';
 
   // ── Mobile nav ───────────────────────────────────────────
-  const toggle = document.getElementById('nav-toggle');
+  const toggle     = document.getElementById('nav-toggle');
   const mobileMenu = document.getElementById('nav-mobile-menu');
 
   if (toggle && mobileMenu) {
@@ -22,27 +22,47 @@
       }
     });
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
         mobileMenu.classList.remove('open');
         toggle.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
       }
     });
   }
 
-  // ── Header scroll shadow ─────────────────────────────────
-  const header = document.getElementById('site-header');
-  if (header) {
-    window.addEventListener('scroll', () => {
-      header.style.boxShadow = window.scrollY > 4
-        ? '0 2px 12px rgba(0,0,0,0.12)'
-        : '0 2px 8px rgba(0,0,0,0.07)';
-    }, { passive: true });
+  // ── Cookie consent ──────────────────────────────────────
+  const COOKIE_KEY = 'lf_cookie_consent';
+  const banner     = document.getElementById('cookie-banner');
+
+  function hasCookieConsent() {
+    try { return !!localStorage.getItem(COOKIE_KEY); } catch { return false; }
+  }
+  function setCookieConsent(val) {
+    try { localStorage.setItem(COOKIE_KEY, val); } catch {}
   }
 
-  // ── Contact form ─────────────────────────────────────────
-  const forms = document.querySelectorAll('.lf-contact-form');
-  forms.forEach((form) => {
+  if (banner && !hasCookieConsent()) {
+    banner.classList.add('visible');
+    const acceptBtn  = document.getElementById('cookie-accept');
+    const declineBtn = document.getElementById('cookie-decline');
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        setCookieConsent('accepted');
+        banner.classList.remove('visible');
+        // Fire any deferred analytics here
+      });
+    }
+    if (declineBtn) {
+      declineBtn.addEventListener('click', () => {
+        setCookieConsent('declined');
+        banner.classList.remove('visible');
+      });
+    }
+  }
+
+  // ── Contact forms ────────────────────────────────────────
+  document.querySelectorAll('.lf-contact-form').forEach((form) => {
     const successEl = form.querySelector('.form-msg.success');
     const errorEl   = form.querySelector('.form-msg.error');
     form.addEventListener('submit', (e) => {
@@ -67,7 +87,7 @@
       const btn = form.querySelector('.form-submit-btn');
       if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
 
-      // TODO: replace with Formspree action or EmailJS
+      // TODO: replace setTimeout with Formspree/EmailJS fetch call
       setTimeout(() => {
         form.reset();
         if (btn) { btn.textContent = 'Send'; btn.disabled = false; }
@@ -75,5 +95,16 @@
       }, 900);
     });
   });
+
+  // ── ADA / Accessibility widget (UserWay) ─────────────────
+  // Injected here so it only loads after page is interactive
+  // Replace ACCOUNT_ID with the client's actual UserWay account
+  (function(d) {
+    var s = d.createElement('script');
+    s.setAttribute('data-account', 'REPLACE_WITH_USERWAY_ACCOUNT_ID');
+    s.setAttribute('src', 'https://cdn.userway.org/widget.js');
+    s.setAttribute('async', true);
+    (d.body || d.head).appendChild(s);
+  })(document);
 
 })();
