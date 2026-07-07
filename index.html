@@ -8,14 +8,14 @@
   <link rel="canonical" href="https://latinfixins.com/" />
   <meta property="og:title" content="Latin Fixins – Food Truck & Catering | Doral, FL" />
   <meta property="og:description" content="Winners of Food Truck Wars. American comfort food with a Traditional Peruvian twist. Daily at The Doral Yard." />
-  <meta property="og:image" content="https://latinfixins.com/wp-content/uploads/2024/09/LatinFixinsWebBanner.png" />
+  <meta property="og:image" content="https://latinfixins.com/assets/img/truck-doral-yard.jpg" />
   <meta property="og:url" content="https://latinfixins.com/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="https://latinfixins.com/wp-content/uploads/2022/04/LF_Icon_Gradient.png" type="image/png" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -39,7 +39,7 @@
         <a href="/services" class="nav-link">Services</a>
       </div>
       <a href="/" class="nav-logo" aria-label="Latin Fixin's — home">
-        <img src="https://latinfixins.com/wp-content/uploads/2022/04/LF_Logo-1-e1650995083933.png" alt="Latin Fixin's logo" width="200" height="75" />
+        <img src="assets/img/lf-logo.png" alt="Latin Fixin's logo" width="200" height="75" />
       </a>
       <div class="nav-right">
         <a href="/about-us" class="nav-link">About Us</a>
@@ -62,19 +62,47 @@
 
   <main id="content">
 
-    <!-- PAGE HERO: unique to homepage — signature burgers spread -->
-    <section class="page-hero">
-      <div class="page-hero-photo">
-        <img
-          src="https://latinfixins.com/wp-content/uploads/2024/09/LatinFixinsWebBanner.png"
-          alt="Latin Fixin's signature Lomo Saltado burgers with crinkle-cut fries"
-          fetchpriority="high"
-        />
-      </div>
-      <div class="page-hero-card">
-        <span class="eyebrow">Doral, Florida</span>
+    <!-- VIDEO HERO: the new banner reel — burger build start-to-finish, ends on the 3D flame -->
+    <section class="video-hero" aria-label="Latin Fixin's signature burgers, made fresh on the truck">
+      <img class="video-hero-poster" src="assets/img/banner-poster.jpg" alt="Lomo Saltado sizzling on the Latin Fixin's griddle" fetchpriority="high" />
+      <video id="hero-video" muted loop playsinline preload="none" poster="assets/img/banner-poster.jpg" data-src="assets/video/lf-banner.mp4" aria-hidden="true"></video>
+      <div class="video-hero-content">
+        <span class="eyebrow">Doral, Florida · Est. 2013</span>
         <h1>American Comfort Food, Peruvian Soul</h1>
-        <p>Award-winning food truck &amp; catering — find us daily at The Doral Yard.</p>
+        <p>Award-winning crafted burgers &amp; catering — find the truck every day at The Doral Yard.</p>
+        <div class="btn-group">
+          <a href="#doral-yard" class="btn btn-orange">Find the Truck</a>
+          <a href="/services" class="btn btn-outline-white">Book Your Event</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DORAL YARD BAND: the truck, front and center -->
+    <section class="doral-band" id="doral-yard" aria-labelledby="doral-heading">
+      <div class="container">
+        <div class="doral-band-grid">
+          <div class="doral-band-photo">
+            <img src="assets/img/truck-doral-yard.jpg" alt="The Latin Fixin's crafted burgers truck parked at The Doral Yard, string lights and sunflowers on the counter" loading="lazy" />
+          </div>
+          <div class="doral-band-info">
+            <img class="flame-mark inline" src="assets/img/lf-3d-flame.jpg" alt="" aria-hidden="true" loading="lazy" />
+            <span class="eyebrow">Find the Truck</span>
+            <h2 id="doral-heading">Every Day at The Doral Yard</h2>
+            <p>Our crafted-burger truck lives at The Doral Yard — Doral's favorite open-air hangout. Swing by for the Lomo Saltado Burger, Fire Balls, and a cold drink under the string lights.</p>
+            <div class="doral-hours">
+              <div class="doral-hours-row"><span class="day">Sunday – Thursday</span><span class="time">11:00 AM – 10:00 PM</span></div>
+              <div class="doral-hours-row"><span class="day">Friday – Saturday</span><span class="time">11:00 AM – 11:00 PM</span></div>
+            </div>
+            <div class="doral-address">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>The Doral Yard · 8455 NW 53rd St, Doral, FL 33166</span>
+            </div>
+            <div class="btn-group">
+              <a href="https://menu.thedoralyard.com/dinein?menu=c9de08fa-9c23-4f47-b211-a63680901d4e" class="btn btn-orange" target="_blank" rel="noopener">See the Menu</a>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Doral+Yard+8455+NW+53rd+St+Doral+FL+33166" class="btn btn-outline-white" target="_blank" rel="noopener">Get Directions</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -83,24 +111,71 @@
       <div class="container">
         <div class="split-grid">
           <div class="split-img">
-            <img src="https://latinfixins.com/wp-content/uploads/2022/04/About_Alex.jpg" alt="Chef Alex plating a burger at Latin Fixin's" loading="lazy" />
+            <img src="assets/img/about-alex.jpg" alt="Chef Alex plating a burger at Latin Fixin's" loading="lazy" />
           </div>
           <div class="split-text">
             <span class="eyebrow">Our Story</span>
             <h2>Established 2012. Still Family Run.</h2>
             <p><strong>Latin Fixin's</strong> started as a catering company, then grew with our first food truck — "Big Fixins" — into a mobile kitchen. Since then we've added trucks to our fleet, partnered with venues, and worked some of South Florida's largest events.</p>
             <p>We excel in serving delicious food with impeccable service, and can cater any style of event — with or without the trucks. Every event should feel unique and unforgettable.</p>
-            <div class="schedule">
-              Sunday – Thursday: 11:00 a.m. – 10:00 p.m.<br />
-              Friday &amp; Saturday: 11:00 a.m. – 11:00 p.m.<br />
-              <strong>The Doral Yard</strong> — open 7 days a week
-            </div>
             <div class="btn-group">
               <a href="/about-us" class="btn btn-orange">More About Us</a>
-              <a href="/services" class="btn btn-outline">Food Truck</a>
-              <a href="/services" class="btn btn-outline">Catering</a>
+              <a href="/services" class="btn btn-outline">Our Services</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARD GRID: Food Truck + Catering + Events -->
+    <section class="card-grid-section bg-soft" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-head">
+          <img class="flame-mark" src="assets/img/lf-3d-flame.jpg" alt="" aria-hidden="true" loading="lazy" />
+          <span class="eyebrow">What We Do</span>
+          <h2 id="services-heading">Food Truck · Catering · Events</h2>
+          <p>From street festivals to formal sit-down dinners, we bring the flavor wherever you need it.</p>
+        </div>
+        <div class="card-grid">
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="assets/img/burger-inca-kola-truck.jpg" alt="Lomo Saltado Burger with crinkle fries and an Inca Kola in front of the Latin Fixin's truck" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3>Food Truck</h3>
+              <p>Corporate events, festivals, concerts, fundraisers, and more — our trucks roll to you, fully equipped.</p>
+              <div class="tag-list">
+                <span>Corporate</span><span>Festivals</span><span>Concerts</span><span>Fundraisers</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="assets/img/bbq-pulled-pork-combo.jpg" alt="Latin Fixin's BBQ pulled pork combo plated for catering" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3>Catering</h3>
+              <p>Full-service catering with staff and equipment — sit-down dinners, family-style displays, or passed hors d'oeuvres.</p>
+              <div class="tag-list">
+                <span>Weddings</span><span>Private Events</span><span>Custom Menus</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="assets/img/ladies-toasting.jpg" alt="Friends toasting drinks over Latin Fixin's burgers at The Doral Yard" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3>Events</h3>
+              <p>Birthdays, watch parties, team outings — gather your crew at the truck or let us bring the party to you.</p>
+              <div class="tag-list">
+                <span>Birthdays</span><span>Team Outings</span><span>Watch Parties</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:36px;">
+          <a href="/services" class="btn btn-dark">Explore Services</a>
         </div>
       </div>
     </section>
@@ -129,46 +204,6 @@
       </div>
     </section>
 
-    <!-- CARD GRID: Food Truck + Catering services preview -->
-    <section class="card-grid-section bg-soft" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">What We Do</span>
-          <h2 id="services-heading">Food Truck + Catering</h2>
-          <p>From street festivals to formal sit-down events, we bring the flavor wherever you need it.</p>
-        </div>
-        <div class="card-grid cols-2">
-          <div class="service-card">
-            <div class="service-card-img">
-              <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0523.jpg" alt="Latin Fixin's Fire Balls, made fresh at the truck" loading="lazy" />
-            </div>
-            <div class="service-card-body">
-              <h3>Food Truck</h3>
-              <p>Corporate events, festivals, concerts, fundraisers, and more — our trucks roll to you, fully equipped.</p>
-              <div class="tag-list">
-                <span>Corporate</span><span>Festivals</span><span>Concerts</span><span>Fundraisers</span>
-              </div>
-            </div>
-          </div>
-          <div class="service-card">
-            <div class="service-card-img">
-              <img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0849.jpg" alt="Latin Fixin's catering spread of tacos for a private event" loading="lazy" />
-            </div>
-            <div class="service-card-body">
-              <h3>Catering</h3>
-              <p>Full-service catering with staff and equipment — sit-down dinners, family-style displays, or passed hors d'oeuvres.</p>
-              <div class="tag-list">
-                <span>Weddings</span><span>Private Events</span><span>Custom Menus</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; margin-top:36px;">
-          <a href="/services" class="btn btn-dark">Explore Services</a>
-        </div>
-      </div>
-    </section>
-
     <!-- STAT STRIP -->
     <section class="stat-strip">
       <div class="container">
@@ -184,7 +219,7 @@
             <p>Find us daily at The Doral Yard, rain or shine.</p>
           </div>
           <div class="stat-item">
-            <div class="stat-num">🏆</div>
+            <img class="stat-icon" src="assets/img/lf-3d-flame.jpg" alt="" aria-hidden="true" loading="lazy" />
             <h3>Food Truck Wars</h3>
             <p>Perfect score winner — 2019 Port Saint Lucie Food Truck Wars.</p>
           </div>
@@ -200,17 +235,17 @@
           <h2 id="clients-heading">Some of Our Clients</h2>
         </div>
         <div class="clients-row">
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/biltmore_logo.jpg" alt="Biltmore Hotel" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/Hard_rock_stadium_florida_logo.svg_-1024x593.png" alt="Hard Rock Stadium" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/Carnival-Cruise-Emblem-1024x576.png" alt="Carnival Cruise" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/World_Central_Kitchen_logo.svg_-1024x608.png" alt="World Central Kitchen" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/forums_corporate_events_logo.jpg" alt="Forums Corporate Events" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/king_jesus_ministry_logo.jpg" alt="King Jesus Ministry" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/logo-loud-and-live-blue.png" alt="Loud and Live" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/ozinga-logo-white-bg-featured-image-900x900-1.webp" alt="Ozinga" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/Rubbermaid.svg_-1024x335.png" alt="Rubbermaid" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/SM-Logo-5x2-1.png" alt="SM" loading="lazy" />
-          <img src="https://latinfixins.com/wp-content/uploads/2025/01/loanDepot-Logo-Transparent-300X300-300x300-1.png" alt="loanDepot" loading="lazy" />
+          <img src="assets/img/clients/biltmore.jpg" alt="Biltmore Hotel" loading="lazy" />
+          <img src="assets/img/clients/hard-rock-stadium.png" alt="Hard Rock Stadium" loading="lazy" />
+          <img src="assets/img/clients/carnival.png" alt="Carnival Cruise" loading="lazy" />
+          <img src="assets/img/clients/world-central-kitchen.png" alt="World Central Kitchen" loading="lazy" />
+          <img src="assets/img/clients/forums.jpg" alt="Forums Corporate Events" loading="lazy" />
+          <img src="assets/img/clients/king-jesus.jpg" alt="King Jesus Ministry" loading="lazy" />
+          <img src="assets/img/clients/loud-and-live.png" alt="Loud and Live" loading="lazy" />
+          <img src="assets/img/clients/ozinga.webp" alt="Ozinga" loading="lazy" />
+          <img src="assets/img/clients/rubbermaid.png" alt="Rubbermaid" loading="lazy" />
+          <img src="assets/img/clients/sm.png" alt="SM" loading="lazy" />
+          <img src="assets/img/clients/loandepot.png" alt="loanDepot" loading="lazy" />
         </div>
       </div>
     </section>
@@ -223,14 +258,15 @@
           <h2 id="social-heading">Get Social!</h2>
         </div>
         <div class="social-handle">
-          <img src="https://latinfixins.com/wp-content/uploads/2022/04/LF_Icon_Gradient.png" alt="" aria-hidden="true" />
+          <img src="assets/img/lf-3d-flame.jpg" alt="" aria-hidden="true" />
           <span>latinfixins</span>
         </div>
         <p class="social-bio">🔥 Crafted Burgers by Latin Fixin's &nbsp;📍 @doralyard &nbsp;⏰ Sun – Thu: 11AM – 10PM | Fri – Sat: 11AM – 12AM</p>
         <div class="ig-grid">
-          <div class="ig-thumb"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0726-Edit.jpg" alt="Lomo Saltado Burger" loading="lazy" /></div>
-          <div class="ig-thumb"><img src="https://latinfixins.com/wp-content/uploads/2022/04/9TLC0585-Edit.jpg" alt="Huancaina Mac &amp; Cheeseburger" loading="lazy" /></div>
-          <div class="ig-thumb"><img src="https://latinfixins.com/wp-content/uploads/2024/09/BBQ-Ribs-scaled.jpg" alt="BBQ Ribs" loading="lazy" /></div>
+          <div class="ig-thumb"><img src="assets/img/all-the-fixins-smashd.jpg" alt="All the Fixin's Smash'd burger" loading="lazy" /></div>
+          <div class="ig-thumb"><img src="assets/img/lomo-sliders.jpg" alt="Lomo Saltado sliders trio" loading="lazy" /></div>
+          <div class="ig-thumb"><img src="assets/img/salchipapas.jpg" alt="Salchipapas with crinkle fries" loading="lazy" /></div>
+          <div class="ig-thumb"><img src="assets/img/burger-trio.jpg" alt="Trio of Latin Fixin's crafted burgers" loading="lazy" /></div>
         </div>
         <div class="social-cta">
           <a href="https://www.instagram.com/latinfixins/" target="_blank" rel="noopener">Follow @latinfixins on Instagram</a>
@@ -299,7 +335,7 @@
           </div>
         </div>
         <div class="footer-logo">
-          <img src="https://latinfixins.com/wp-content/uploads/2022/04/LF_WhiteIcon.png" alt="Latin Fixin's flame icon" width="80" loading="lazy" />
+          <img src="assets/img/lf-white-icon.png" alt="Latin Fixin's flame icon" width="80" loading="lazy" />
         </div>
         <div class="footer-col-right">
           <h3>Contact Us</h3>

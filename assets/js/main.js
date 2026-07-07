@@ -31,6 +31,20 @@
     });
   }
 
+  // ── Hero banner video ────────────────────────────────────
+  // Deferred load: only fetch the 12MB reel when motion is OK.
+  // The poster <img> underneath stays as the fallback on
+  // reduced-motion, save-data, or if playback is blocked.
+  const heroVideo = document.getElementById('hero-video');
+  if (heroVideo && heroVideo.dataset.src) {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const saveData = navigator.connection && navigator.connection.saveData;
+    if (!reducedMotion && !saveData) {
+      heroVideo.src = heroVideo.dataset.src;
+      heroVideo.play().catch(() => { heroVideo.removeAttribute('src'); });
+    }
+  }
+
   // ── Cookie consent ──────────────────────────────────────
   const COOKIE_KEY = 'lf_cookie_consent';
   const banner     = document.getElementById('cookie-banner');
