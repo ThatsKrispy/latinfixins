@@ -75,7 +75,12 @@
     }
   }
 
-  // ── Contact forms ────────────────────────────────────────
+  // ── Contact forms → open the visitor's email client (mailto) ──
+  // No backend: on submit we build a pre-filled email to
+  // info@latinfixins.com and hand it to the visitor's mail app.
+  // They review and press send. (Swap to Formspree/Pages Function
+  // later if we want submissions to arrive without that step.)
+  const LF_INBOX = 'info@latinfixins.com';
   document.querySelectorAll('.lf-contact-form').forEach((form) => {
     const successEl = form.querySelector('.form-msg.success');
     const errorEl   = form.querySelector('.form-msg.error');
@@ -85,6 +90,7 @@
       if (errorEl)   errorEl.style.display   = 'none';
 
       const name    = form.querySelector('[name="name"]');
+      const phone   = form.querySelector('[name="phone"]');
       const email   = form.querySelector('[name="email"]');
       const message = form.querySelector('[name="message"]');
       const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -98,15 +104,26 @@
         return;
       }
 
-      const btn = form.querySelector('.form-submit-btn');
-      if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
+      const subject = `Event Inquiry from ${name.value.trim()}`;
+      const body = [
+        `Name: ${name.value.trim()}`,
+        phone?.value.trim() ? `Phone: ${phone.value.trim()}` : null,
+        `Email: ${email.value.trim()}`,
+        '',
+        message.value.trim(),
+      ].filter((line) => line !== null).join('\n');
 
-      // TODO: replace setTimeout with Formspree/EmailJS fetch call
-      setTimeout(() => {
-        form.reset();
-        if (btn) { btn.textContent = 'Send'; btn.disabled = false; }
-        if (successEl) { successEl.style.display = 'block'; }
-      }, 900);
+      const mailto = `mailto:${LF_INBOX}`
+        + `?subject=${encodeURIComponent(subject)}`
+        + `&body=${encodeURIComponent(body)}`;
+
+      // Opens the default mail app with everything pre-filled.
+      window.location.href = mailto;
+
+      if (successEl) {
+        successEl.textContent = `✓ Opening your email app — just press send and your message is on its way. If nothing opened, email us directly at ${LF_INBOX}.`;
+        successEl.style.display = 'block';
+      }
     });
   });
 
