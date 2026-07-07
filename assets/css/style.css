@@ -143,6 +143,9 @@ h1, h2, h3 { font-family:var(--font-display); font-weight:400; text-transform:up
 .split-grid.reverse .split-img { order:2; }
 .split-grid.reverse .split-text { order:1; }
 .split-img img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--radius-lg); box-shadow:var(--shadow-lg); }
+/* Portrait/near-square shots (chef plating, family + trucks) show in full —
+   no forced landscape crop that would cut off the face or the food. */
+.split-img.natural img { aspect-ratio:auto; }
 .split-text h2 { font-size:clamp(1.9rem,3.2vw,2.7rem); margin-bottom:18px; }
 .split-text p { font-size:0.94rem; color:var(--text-mid); line-height:1.8; margin-bottom:14px; }
 .split-text p strong { color:var(--dark); }
