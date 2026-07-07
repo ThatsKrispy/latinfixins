@@ -198,6 +198,26 @@
     apply();
   });
 
+  // ── Stay clear of the cookie-consent bar ─────────────────
+  // While the cookie banner is visible, lift the button (and its
+  // panel) above it; once dismissed, drop back to the corner.
+  var cookieBanner = document.getElementById('cookie-banner');
+  function clearCookieBar() {
+    if (cookieBanner && cookieBanner.classList.contains('visible')) {
+      var lift = cookieBanner.offsetHeight + 16;
+      fab.style.bottom = lift + 'px';
+      panel.style.bottom = (lift + 66) + 'px';
+    } else {
+      fab.style.bottom = '';
+      panel.style.bottom = '';
+    }
+  }
+  if (cookieBanner) {
+    clearCookieBar();
+    new MutationObserver(clearCookieBar).observe(cookieBanner, { attributes: true, attributeFilter: ['class'] });
+    window.addEventListener('resize', clearCookieBar);
+  }
+
   // Apply any persisted settings on load
   apply();
 })();
