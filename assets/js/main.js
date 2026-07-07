@@ -127,21 +127,8 @@
     });
   });
 
-  // ── ADA / Accessibility widget (UserWay) ─────────────────
-  // NOTE: 'REPLACE_WITH_USERWAY_ACCOUNT_ID' must be swapped for the
-  // client's real account ID from userway.org before this activates.
-  // Left as a guarded no-op until then so it never throws in console.
-  (function(d) {
-    var ACCOUNT_ID = 'REPLACE_WITH_USERWAY_ACCOUNT_ID';
-    if (!ACCOUNT_ID || ACCOUNT_ID.indexOf('REPLACE_WITH') === 0) {
-      console.info('[Latin Fixins] UserWay accessibility widget not yet configured — set ACCOUNT_ID in main.js');
-      return;
-    }
-    var s = d.createElement('script');
-    s.setAttribute('data-account', ACCOUNT_ID);
-    s.setAttribute('src', 'https://cdn.userway.org/widget.js');
-    s.setAttribute('async', true);
-    (d.body || d.head).appendChild(s);
-  })(document);
+  // ── ADA / Accessibility widget ───────────────────────────
+  // Fully self-contained, first-party widget — see assets/js/a11y.js.
+  // (Replaces the old UserWay placeholder; no third-party account needed.)
 
 })();
