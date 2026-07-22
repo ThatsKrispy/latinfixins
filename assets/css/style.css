@@ -344,6 +344,21 @@ textarea.form-input { min-height:120px; resize:vertical; }
 .privacy-page a { color:var(--orange-dark); }
 
 /* ============================================================
+   PATTERN 8 — CATERING (offerings grid + photo gallery)
+   ============================================================ */
+.offer-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.offer-item { background:var(--cream); border-radius:var(--radius); border-top:3px solid var(--orange); padding:24px 20px 20px; text-align:center; box-shadow:var(--shadow); }
+.offer-item h3 { font-size:1.22rem; letter-spacing:0.05em; margin-bottom:6px; }
+.offer-item p { font-size:0.85rem; color:var(--text-mid); line-height:1.6; margin:0; }
+
+.catering-gallery { display:grid; grid-template-columns:repeat(3,1fr); grid-auto-rows:230px; grid-auto-flow:dense; gap:12px; }
+.catering-gallery .gal-item { overflow:hidden; border-radius:var(--radius-lg); box-shadow:var(--shadow); }
+.catering-gallery .gal-item img { width:100%; height:100%; object-fit:cover; transition:transform 0.35s; }
+.catering-gallery .gal-item:hover img { transform:scale(1.04); }
+.catering-gallery .gal-item.tall { grid-row:span 2; }
+.catering-gallery .gal-item.wide { grid-column:span 2; }
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width:1024px) {
@@ -351,6 +366,7 @@ textarea.form-input { min-height:120px; resize:vertical; }
   .card-grid.cols-4 { grid-template-columns:repeat(2,1fr); }
   .ig-grid { grid-template-columns:repeat(3,1fr); }
   .doral-band-grid { grid-template-columns:1fr; gap:32px; }
+  .offer-grid { grid-template-columns:repeat(2,1fr); }
 }
 
 @media (max-width:768px) {
@@ -381,6 +397,9 @@ textarea.form-input { min-height:120px; resize:vertical; }
 
   .reviews-grid { grid-template-columns:1fr; }
   .ig-grid { grid-template-columns:repeat(2,1fr); }
+  .offer-grid { grid-template-columns:1fr; }
+  .catering-gallery { grid-template-columns:repeat(2,1fr); grid-auto-rows:170px; }
+  .catering-gallery .gal-item.tall { grid-row:span 1; }
 
   .contact-form-inner { grid-template-columns:1fr; gap:32px; }
   .form-row { grid-template-columns:1fr; }
